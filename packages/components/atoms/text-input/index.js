@@ -1,12 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import "./text-input.scss"
+import React from "react";
+import PropTypes from "prop-types";
+import "./text-input.scss";
 
 const TextInput = props => {
-  const { hasError, ...restOfTheProps } = props
+  const { hasError, ...restOfTheProps } = props;
 
-  let className = "text-input"
-  if (hasError) className += " error"
+  let className = "text-input";
+  if (hasError) className += " error";
 
   return (
     <input
@@ -14,17 +14,17 @@ const TextInput = props => {
       disabled={props.disabled}
       {...restOfTheProps}
     />
-  )
-}
+  );
+};
 
 TextInput.propTypes = {
   hasError: PropTypes.bool,
   disabled: PropTypes.bool
-}
+};
 
 TextInput.defaultProps = {
   hasError: false,
   disabled: false
-}
+};
 
-export default TextInput
+export default TextInput;

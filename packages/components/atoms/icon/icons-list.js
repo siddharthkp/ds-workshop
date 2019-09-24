@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const icons = {
   check: (
@@ -84,6 +84,6 @@ const icons = {
       />
     </svg>
   )
-}
+};
 
-export default icons
+export default icons;

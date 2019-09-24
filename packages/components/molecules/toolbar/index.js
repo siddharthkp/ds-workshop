@@ -1,6 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import "./toolbar.scss"
+import React from "react";
+import PropTypes from "prop-types";
+import "./toolbar.scss";
 
 const Toolbar = props => {
   return (
@@ -8,10 +8,10 @@ const Toolbar = props => {
       {props.children}
       <div className="toolbar-clear" />
     </div>
-  )
-}
+  );
+};
 
-Toolbar.Left = props => <div className="toolbar-left" {...props} />
-Toolbar.Right = props => <div className="toolbar-right" {...props} />
+Toolbar.Left = props => <div className="toolbar-left" {...props} />;
+Toolbar.Right = props => <div className="toolbar-right" {...props} />;
 
-export default Toolbar
+export default Toolbar;

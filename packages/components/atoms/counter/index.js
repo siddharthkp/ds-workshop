@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import "./counter.scss"
+import React from "react";
+import PropTypes from "prop-types";
+import "./counter.scss";
 
-import { Icon } from "components"
+import { Icon } from "components";
 
 const Counter = props => {
   return (
@@ -10,7 +10,7 @@ const Counter = props => {
       {props.icon ? <Icon name={props.icon} /> : null}
       {props.value}
     </div>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;

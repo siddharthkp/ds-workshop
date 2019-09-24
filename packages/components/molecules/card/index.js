@@ -1,12 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import "./card.scss"
+import React from "react";
+import PropTypes from "prop-types";
+import "./card.scss";
 
 const Card = props => {
-  return <div className="card" {...props} />
-}
+  return <div className="card" {...props} />;
+};
 
-Card.Body = props => <div className="card-body" {...props} />
-Card.Footer = props => <div className="card-footer" {...props} />
+Card.Body = props => <div className="card-body" {...props} />;
+Card.Footer = props => <div className="card-footer" {...props} />;
 
-export default Card
+export default Card;

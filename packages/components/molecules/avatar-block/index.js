@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import "./avatar-block.scss"
-import { Avatar, Badge } from "components"
+import React from "react";
+import PropTypes from "prop-types";
+import "./avatar-block.scss";
+import { Avatar, Badge } from "components";
 
 const AvatarBlock = props => {
   return (
@@ -10,11 +10,11 @@ const AvatarBlock = props => {
       <a href={props.url}>{props.name}</a>
       <Badge>{props.label}</Badge>
     </div>
-  )
-}
+  );
+};
 
-AvatarBlock.propTypes = {}
+AvatarBlock.propTypes = {};
 
-AvatarBlock.defaultProps = {}
+AvatarBlock.defaultProps = {};
 
-export default AvatarBlock
+export default AvatarBlock;

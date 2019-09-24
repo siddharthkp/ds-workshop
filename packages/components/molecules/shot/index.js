@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import "./shot.scss"
-import { AvatarBlock, Card, Counter, Icon, Image, Toolbar } from "components"
+import React from "react";
+import PropTypes from "prop-types";
+import "./shot.scss";
+import { AvatarBlock, Card, Counter, Icon, Image, Toolbar } from "components";
 
 const Shot = props => {
   return (
@@ -30,9 +30,9 @@ const Shot = props => {
         src="https://cdn.dribbble.com/users/441550/avatars/small/ff7601302c6a004465e0f936110a35de.jpg"
       />
     </div>
-  )
-}
+  );
+};
 
-Shot.propTypes = {}
+Shot.propTypes = {};
 
-export default Shot
+export default Shot;

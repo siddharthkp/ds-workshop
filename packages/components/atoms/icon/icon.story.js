@@ -1,7 +1,7 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import Icon from "./index"
-import { Stack, Box } from "../_helpers"
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Icon from "./index";
+import { Stack, Box } from "../_helpers";
 
 storiesOf("Icon", module).add("names", () => (
   <Stack>
@@ -53,4 +53,4 @@ storiesOf("Icon", module).add("names", () => (
     <Box color="#ea3423" name="error-bg" />
     <Box color="#ae2318" name="error-text" />
   </Stack>
-))
+));
