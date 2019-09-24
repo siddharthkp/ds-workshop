@@ -1,0 +1,13 @@
+{
+  "name": "components",
+  "version": "0.0.1",
+  "description": "Dribbble component library",
+  "main": "index.js",
+  "scripts": {},
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "dependencies": {}
+}

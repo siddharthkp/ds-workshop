@@ -1,0 +1,12 @@
+{
+  "name": "workshop",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "docs": "docz dev",
+    "storybook": "start-storybook -p 6006"
+  },
+  "license": "MIT"
+}
