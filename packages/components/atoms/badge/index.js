@@ -1,13 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./badge.scss";
+import { Element } from "./badge.styles";
+import css from "@styled-system/css";
 
 const Badge = props => {
-  return (
-    <span className="badge" style={{ backgroundColor: props.color }}>
-      {props.children}
-    </span>
-  );
+  return <Element {...props} />;
 };
 
 Badge.propTypes = {

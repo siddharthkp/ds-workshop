@@ -1,15 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./icon.scss";
+import { Element } from "./icon.styles";
 import icons from "./icons-list";
 
 const Icon = props => {
-  const { color, ...restOfTheProps } = props;
-  return (
-    <i className="icon" style={{ color: color }} {...restOfTheProps}>
-      {icons[props.name]}
-    </i>
-  );
+  return <Element {...props}>{icons[props.name]}</Element>;
 };
 
 Icon.propTypes = {
@@ -23,6 +18,10 @@ Icon.propTypes = {
     "view"
   ]),
   color: PropTypes.string
+};
+
+Icon.defaultProps = {
+  color: "grays.500"
 };
 
 export default Icon;

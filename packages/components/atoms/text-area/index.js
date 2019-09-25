@@ -1,20 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./text-area.scss";
+import { Element } from "./text-area.styles";
 
 const TextArea = props => {
-  const { hasError, ...restOfTheProps } = props;
-
-  let className = "text-input";
-  if (hasError) className += " error";
-
-  return (
-    <textarea
-      className={className}
-      disabled={props.disabled}
-      {...restOfTheProps}
-    />
-  );
+  return <Element {...props} />;
 };
 
 TextArea.propTypes = {

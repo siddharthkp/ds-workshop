@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./image.scss";
+import { Element } from "./image.styles";
 
 const Image = props => {
-  return <img className="image" {...props} />;
+  return <Element className="image" {...props} />;
 };
 
 Image.propTypes = {

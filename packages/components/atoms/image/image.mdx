@@ -4,16 +4,18 @@ name: Image
 
 import { Playground, Props } from "docz";
 import { Image } from "components/";
-import { Preview, Stack } from "components/_helpers";
+import { ThemeWrapper, Preview, Stack } from "components/_helpers";
 
 # Image
 
 <Preview>
-  <Image
-    width="200"
-    height="150"
-    src="https://cdn.dribbble.com/users/666045/screenshots/3611646/artboard_3.png"
-  />
+  <ThemeWrapper>
+    <Image
+      width="200"
+      height="150"
+      src="http://twitter-avatar.now.sh/codesandbox"
+    />
+  </ThemeWrapper>
 </Preview>
 
 <Props of={Image} />
@@ -21,9 +23,7 @@ import { Preview, Stack } from "components/_helpers";
 ## Basic usage
 
 <Playground>
-  <Image
-    width="200"
-    height="150"
-    src="https://cdn.dribbble.com/users/666045/screenshots/3611646/artboard_3.png"
-  />
+  <ThemeWrapper>
+    <Image width="100" src="http://twitter-avatar.now.sh/codesandbox" />
+  </ThemeWrapper>
 </Playground>

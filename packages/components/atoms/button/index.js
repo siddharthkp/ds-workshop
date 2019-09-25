@@ -2,13 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./button.scss";
 import styled from "styled-components";
-// import { Icon } from "components";
-
-const Icon = styled.i`
-  width: 20px;
-  height: 20px;
-  background: blue;
-`;
+import { Icon } from "components";
 
 const Button = props => {
   return (
@@ -29,23 +23,22 @@ const Button = props => {
 };
 
 Button.propTypes = {
-  /** The description for myProp */
-  disabled: PropTypes.bool
-  // appearance: PropTypes.oneOf([
-  //   "primary",
-  //   "secondary",
-  //   "secondary-alt",
-  //   "info",
-  //   "accent",
-  //   "success"
-  // ]),
-  // size: PropTypes.oneOf(["small", "normal", "large"])
+  disabled: PropTypes.bool,
+  appearance: PropTypes.oneOf([
+    "primary",
+    "secondary",
+    "secondary-alt",
+    "info",
+    "accent",
+    "success"
+  ]),
+  size: PropTypes.oneOf(["small", "normal", "large"])
 };
-//
-// Button.defaultProps = {
-//   disabled: false,
-//   appearance: "primary",
-//   size: "normal"
-// };
+
+Button.defaultProps = {
+  disabled: false,
+  appearance: "primary",
+  size: "normal"
+};
 
 export default Button;

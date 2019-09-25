@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./avatar.scss";
+import { Element } from "./avatar.styles";
 
 const Avatar = props => {
-  return <img className={`avatar ${props.size}`} src={props.src} />;
+  return <Element {...props} />;
 };
 
 Avatar.propTypes = {

@@ -4,22 +4,26 @@ name: Icon
 
 import { Playground, Props } from "docz";
 import { Icon } from "components";
-import { Preview, Stack } from "components/_helpers";
+import { ThemeWrapper, Preview, Stack } from "components/_helpers";
 
 # Icon
 
 <Preview>
-  <Icon name="heart" color="#d95988" />
+  <ThemeWrapper>
+    <Icon name="heart" color="pinks.500" />
+  </ThemeWrapper>
 </Preview>
 
 <Props of={Icon} />
 
 <Playground>
-  <Stack>
-    <Icon color="#7bbb5e" name="check" />
-    <Icon color="#d95988" name="heart" />
-    <Icon color="#3a8bbb" name="link" />
-    <Icon name="list" />
-    <Icon name="paperclip" />
-  </Stack>
+  <ThemeWrapper>
+    <Stack>
+      <Icon color="greens.500" name="check" />
+      <Icon color="pinks.500" name="heart" />
+      <Icon color="blues.500" name="link" />
+      <Icon name="list" />
+      <Icon name="paperclip" />
+    </Stack>
+  </ThemeWrapper>
 </Playground>

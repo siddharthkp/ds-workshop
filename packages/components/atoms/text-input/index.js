@@ -1,20 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./text-input.scss";
+import { Element } from "./text-input.styles";
 
 const TextInput = props => {
-  const { hasError, ...restOfTheProps } = props;
-
-  let className = "text-input";
-  if (hasError) className += " error";
-
-  return (
-    <input
-      className={className}
-      disabled={props.disabled}
-      {...restOfTheProps}
-    />
-  );
+  return <Element {...props} />;
 };
 
 TextInput.propTypes = {

@@ -4,12 +4,14 @@ name: TextInput
 
 import { Playground, Props } from "docz";
 import { TextInput } from "components";
-import { Preview, Stack } from "components/_helpers";
+import { ThemeWrapper, Preview, Stack } from "components/_helpers";
 
 # TextInput
 
 <Preview>
-  <TextInput placeholder="Enter text" />
+  <ThemeWrapper>
+    <TextInput placeholder="Enter text" />
+  </ThemeWrapper>
 </Preview>
 
 <Props of={TextInput} />
@@ -17,11 +19,13 @@ import { Preview, Stack } from "components/_helpers";
 ## Input states
 
 <Playground>
-  <TextInput placeholder="Enter text" />
-  <br />
-  <br />
-  <TextInput hasError placeholder="Enter text" />
-  <br />
-  <br />
-  <TextInput disabled placeholder="This is readonly" />
+  <ThemeWrapper>
+    <TextInput placeholder="Enter text" />
+    <br />
+    <br />
+    <TextInput hasError placeholder="Enter text" />
+    <br />
+    <br />
+    <TextInput disabled placeholder="This is readonly" />
+  </ThemeWrapper>
 </Playground>

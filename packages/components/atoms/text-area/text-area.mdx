@@ -4,12 +4,14 @@ name: TextArea
 
 import { Playground, Props } from "docz";
 import { TextArea } from "components";
-import { Preview, Stack } from "components/_helpers";
+import { ThemeWrapper, Preview, Stack } from "components/_helpers";
 
 # TextArea
 
 <Preview>
-  <TextArea placeholder="Enter text" />
+  <ThemeWrapper>
+    <TextArea placeholder="Enter text" />
+  </ThemeWrapper>
 </Preview>
 
 <Props of={TextArea} />
@@ -17,11 +19,13 @@ import { Preview, Stack } from "components/_helpers";
 ## Input states
 
 <Playground>
-  <TextArea placeholder="Enter text" />
-  <br />
-  <br />
-  <TextArea hasError placeholder="Enter text" />
-  <br />
-  <br />
-  <TextArea disabled placeholder="This is readonly" />
+  <ThemeWrapper>
+    <TextArea placeholder="Enter text" />
+    <br />
+    <br />
+    <TextArea hasError placeholder="Enter text" />
+    <br />
+    <br />
+    <TextArea disabled placeholder="This is readonly" />
+  </ThemeWrapper>
 </Playground>
