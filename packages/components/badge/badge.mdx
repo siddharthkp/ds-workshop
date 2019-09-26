@@ -1,0 +1,28 @@
+---
+name: Badge
+---
+
+import { Playground, Props } from "docz";
+import { ThemeWrapper, Preview, Stack } from "components/_helpers";
+
+import { Badge } from "components";
+
+# Badge
+
+<Preview>
+  <ThemeWrapper>
+    <Badge>private</Badge>
+  </ThemeWrapper>
+</Preview>
+
+<Props of={Badge} />
+
+<Playground>
+  <ThemeWrapper>
+    <Stack>
+      <Badge>member</Badge>
+      <Badge color="pinks.500">Pro</Badge>
+      <Badge color="blues.500">Team</Badge>
+    </Stack>
+  </ThemeWrapper>
+</Playground>
